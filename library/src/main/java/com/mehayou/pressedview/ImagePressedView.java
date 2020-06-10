@@ -68,9 +68,9 @@ public class ImagePressedView extends AppCompatImageView {
     /**
      * 设置按下效果目标
      *
-     * @param target {@link ImagePressedView.TARGET_NONE} 无效果
-     *               {@link ImagePressedView.TARGET_SRC} 图片按下效果
-     *               {@link ImagePressedView.TARGET_BACKGROUND} 背景按下效果
+     * @param target {ImagePressedView.TARGET_NONE} 无效果
+     *               {ImagePressedView.TARGET_SRC} 图片按下效果
+     *               {ImagePressedView.TARGET_BACKGROUND} 背景按下效果
      */
     public void setPressedTarget(int target) {
         this.mPressedTarget = target;
@@ -83,8 +83,8 @@ public class ImagePressedView extends AppCompatImageView {
     /**
      * 设置按下效果模式
      *
-     * @param mode {@link ImagePressedView.MODE_COLOR} 按下颜色变化
-     *             {@link ImagePressedView.MODE_ALPHA} 按下透明度变化
+     * @param mode {ImagePressedView.MODE_COLOR} 按下颜色变化
+     *             {ImagePressedView.MODE_ALPHA} 按下透明度变化
      */
     private void setPressedMode(int mode) {
         this.mPressedMode = mode;

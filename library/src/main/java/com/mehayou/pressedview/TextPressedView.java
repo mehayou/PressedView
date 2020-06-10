@@ -70,10 +70,10 @@ public class TextPressedView extends AppCompatTextView {
     /**
      * 设置按下效果目标
      *
-     * @param target {@link TextPressedView.TARGET_NONE} 无效果
-     *               {@link TextPressedView.TARGET_TEXT} 文字按下效果
-     *               {@link TextPressedView.TARGET_BACKGROUND} 背景按下效果
-     *               {@link TextPressedView.TARGET_COMPOUND_DRAWABLE} 图标按下效果
+     * @param target {TextPressedView.TARGET_NONE} 无效果
+     *               {TextPressedView.TARGET_TEXT} 文字按下效果
+     *               {TextPressedView.TARGET_BACKGROUND} 背景按下效果
+     *               {TextPressedView.TARGET_COMPOUND_DRAWABLE} 图标按下效果
      */
     private void setPressedTarget(int target) {
         this.mPressedTarget = target;
@@ -86,8 +86,8 @@ public class TextPressedView extends AppCompatTextView {
     /**
      * 设置按下效果模式
      *
-     * @param mode {@link TextPressedView.MODE_COLOR} 按下颜色变化
-     *             {@link TextPressedView.MODE_ALPHA} 按下透明度变化
+     * @param mode {TextPressedView.MODE_COLOR} 按下颜色变化
+     *             {TextPressedView.MODE_ALPHA} 按下透明度变化
      */
     private void setPressedMode(int mode) {
         this.mPressedMode = mode;
