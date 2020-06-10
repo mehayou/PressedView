@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorAccent"
+            android:text="TEXT按下透明度效果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="TEXT"
+                app:textPressedAlpha="0.25"
+                app:textPressedMode="alpha"
+                app:textPressedTarget="text" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="DRAWABLE"
+                app:textPressedAlpha="0.25"
+                app:textPressedMode="alpha"
+                app:textPressedTarget="compound_drawable" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="BACKGROUND"
+                app:textPressedAlpha="0.25"
+                app:textPressedMode="alpha"
+                app:textPressedTarget="background" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="ALL"
+                app:textPressedAlpha="0.25"
+                app:textPressedMode="alpha"
+                app:textPressedTarget="text|compound_drawable|background" />
+
+        </LinearLayout>
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorAccent"
+            android:text="TEXT按下颜色变化效果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="TEXT"
+                android:textColor="@android:color/background_light"
+                app:textPressedColor="@color/colorPrimary"
+                app:textPressedMode="color"
+                app:textPressedTarget="text" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="DRAWABLE"
+                app:textPressedColor="@color/colorPrimary"
+                app:textPressedMode="color"
+                app:textPressedTarget="compound_drawable" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="BACKGROUND"
+                app:textPressedColor="@color/colorPrimary"
+                app:textPressedMode="color"
+                app:textPressedTarget="background" />
+
+            <com.mehayou.pressedview.TextPressedView
+                style="@style/TextStyle"
+                android:text="ALL"
+                android:textColor="@android:color/background_light"
+                app:textPressedColor="@color/colorPrimary"
+                app:textPressedMode="color"
+                app:textPressedTarget="text|compound_drawable|background" />
+
+        </LinearLayout>
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="TEXT按下背景水波纹效果"
+            app:textRippleColor="@color/colorPrimary" />
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorAccent"
+            android:text="IMAGE按下图片&amp;背景水波纹效果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mehayou.pressedview.ImagePressedView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="1dp"
+                android:clickable="true"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:src="@android:mipmap/sym_def_app_icon"
+                app:imagePressedTarget="src"
+                app:imageRippleColor="@color/colorPrimary" />
+
+            <com.mehayou.pressedview.ImagePressedView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:padding="16dp"
+                app:imagePressedTarget="background"
+                app:imageRippleColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorAccent"
+            android:text="IMAGE按下颜色变化效果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedColor="@color/colorPrimary"
+                app:imagePressedMode="color"
+                app:imagePressedTarget="src" />
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedColor="@color/colorPrimary"
+                app:imagePressedMode="color"
+                app:imagePressedTarget="background" />
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedColor="@color/colorPrimary"
+                app:imagePressedMode="color"
+                app:imagePressedTarget="src|background" />
+        </LinearLayout>
+
+        <com.mehayou.pressedview.TextPressedView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="@color/colorAccent"
+            android:text="IMAGE按下透明度效果" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedAlpha="0.25"
+                app:imagePressedMode="alpha"
+                app:imagePressedTarget="src" />
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedAlpha="0.25"
+                app:imagePressedMode="alpha"
+                app:imagePressedTarget="background" />
+
+            <com.mehayou.pressedview.ImagePressedView
+                style="@style/ImageStyle"
+                app:imagePressedAlpha="0.25"
+                app:imagePressedMode="alpha"
+                app:imagePressedTarget="src|background" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextPressedView">
+        <attr name="textRippleColor" format="reference|color" />
+        <attr name="textPressedTarget">
+            <flag name="none" value="0" />
+            <flag name="text" value="1" />
+            <flag name="background" value="2" />
+            <flag name="compound_drawable" value="4" />
+        </attr>
+        <attr name="textPressedColor" format="reference|color" />
+        <attr name="textPressedAlpha" format="float" />
+        <attr name="textPressedMode">
+            <enum name="color" value="0" />
+            <enum name="alpha" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ImagePressedView">
+        <attr name="imageRippleColor" format="reference|color" />
+        <attr name="imagePressedTarget">
+            <flag name="none" value="0" />
+            <flag name="src" value="1" />
+            <flag name="background" value="2" />
+        </attr>
+        <attr name="imagePressedColor" format="reference|color" />
+        <attr name="imagePressedAlpha" format="float" />
+        <attr name="imagePressedMode">
+            <enum name="color" value="0" />
+            <enum name="alpha" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
